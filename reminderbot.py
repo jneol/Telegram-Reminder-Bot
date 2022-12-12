@@ -23,15 +23,6 @@ logger = logging.getLogger(__name__)
 
 STARTING, TASKNAME, DEADLINE1, DEADLINE2, REMIND = range(5)
 
-# Define a few command handlers. These usually take the two arguments update and
-# context.
-
-reminders = []
-reminders_date = []
-reminders_time = []
-join_date = []
-chat_idd = []
-
 def help_command(update, context):
     update.message.reply_text('<u>A couple of things to take note of</u>:\n1. The <b>Date & Time</b> format has to be entered precisely according to the examples provided. Please re-enter your reminder from scratch if you messed up somewhere.\n2. The bot currently only supports the <b>Asia/Singapore (GMT+8)</b> timezone.\n3. Please dm the creator should there be any bugs/suggestions!', parse_mode="HTML")
 
